@@ -1,0 +1,312 @@
+/* Hero Section */
+.top-body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+}
+
+.home-image {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay-content {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  right: 10%;
+  color: white;
+  text-shadow: 1px 1px 4px #000;
+  text-align: left;
+}
+
+.overlay-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.overlay-content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+
+.button-group button {
+  margin-right: 15px;
+  padding: 12px 24px;
+  background-color: #2563eb;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.button-group button:hover {
+  background-color: #1e40af;
+}
+
+/* Features Section */
+.features-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 40px;
+}
+
+.features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.feature-item {
+  max-width: 280px;
+  text-align: center;
+}
+
+.feature-icon {
+  margin-bottom: 10px;
+}
+
+.feature-item h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.feature-item p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+
+/* Accordion Section */
+.accordion-section {
+  background-color: #f5f7fb;
+  padding: 60px 20px;
+}
+.section-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+}
+.accordion-section .section-title {
+  text-align: left;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.accordion-section .highlight {
+  color: #2563eb;
+}
+
+.accordion-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.accordion-item {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: background 0.3s ease;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-header h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.accordion-content {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+
+/* CTA Section */
+.cta-section {
+  background-color: #e6f4fa;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.cta-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #1e3a8a;
+}
+
+.cta-heading .highlight {
+  color: #2563eb;
+}
+
+.cta-subtext {
+  font-size: 1rem;
+  color: #1e3a8a;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 14px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #1c2d6a;
+}
+
+
+
+/* About Section */
+.about-section {
+  padding: 80px 20px;
+  background-color: #f5f7fb;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+}
+
+.about-images {
+  display: flex;
+  gap: 20px;
+  flex: 1;
+}
+
+.img-wrapper {
+  position: relative;
+}
+
+.about-img {
+  border-radius: 12px;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.about-img.small {
+  max-width: 220px;
+}
+
+.about-img.large {
+  max-width: 300px;
+}
+
+.experience-badge {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  background-color: white;
+  border: 2px solid #1e3a8a;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 22px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: #1e3a8a;
+  font-size: 0.8rem;
+  line-height: 1.1;
+}
+
+.experience-badge .years {
+  display: block;
+  font-size: 1.4rem;
+  color: #1e3a8a;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.about-text .tag {
+  background-color: #dbeafe;
+  color: #1e3a8a;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.about-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.about-title .highlight {
+  color: #2563eb;
+}
+
+.about-text p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.learn-more-btn {
+  background-color: #14532d;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.learn-more-btn:hover {
+  background-color: #0f3c1d;
+}
