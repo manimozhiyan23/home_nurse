@@ -1,0 +1,62 @@
+/* BookNurse.css */
+
+.book-nurse-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f4f8; /* Light background color */
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #2c3e50; /* Darker shade for text */
+  font-family: 'Arial', sans-serif;
+}
+
+.book-nurse-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.book-nurse-form input,
+.book-nurse-form textarea,
+.book-nurse-form select {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+
+.book-nurse-form button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 200px;
+  align-self: center;
+}
+
+.book-nurse-form button:hover {
+  background-color: #217dbb;
+}

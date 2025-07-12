@@ -1,0 +1,123 @@
+/* src/styles/Login.css */
+
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container for the login form */
+.login-container {
+  max-width: 400px;
+  margin: 4rem auto; /* Center vertically with margin */
+  padding: 2rem 2.5rem;
+  background-color: #f9fafb; /* Light background */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Subtle shadow */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* Header */
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #2c3e50;
+}
+
+/* Form styles */
+.login-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label styles */
+.login-container label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+  color: #34495e;
+}
+
+/* Select and input styles */
+.login-container select,
+.login-container input {
+  margin-top: 0.4rem;
+  padding: 0.5rem 0.8rem;
+  border: 1.8px solid #bdc3c7;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  outline-offset: 2px;
+  outline-color: transparent;
+}
+
+/* Focus state for inputs and select */
+.login-container select:focus,
+.login-container input:focus {
+  border-color: #2980b9;
+  outline-color: #2980b9;
+  box-shadow: 0 0 5px rgba(41, 128, 185, 0.5);
+}
+
+/* Button styles */
+.login-container button {
+  margin-top: 1.5rem;
+  padding: 0.75rem;
+  background-color: #2980b9;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.25s ease, transform 0.15s ease;
+}
+
+.login-container button:hover,
+.login-container button:focus {
+  background-color: #1c5980;
+  transform: translateY(-2px);
+  outline: none;
+}
+
+/* Responsive Design */
+/* Tablet: smaller widths & padding */
+@media (max-width: 768px) {
+  .login-container {
+    max-width: 90%;
+    padding: 1.5rem 2rem;
+    margin: 3rem auto;
+  }
+  .login-container h2 {
+    font-size: 1.75rem;
+  }
+  .login-container button {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile: full width, adjust font size */
+@media (max-width: 480px) {
+  .login-container {
+    margin: 2rem auto;
+    padding: 1rem 1.5rem;
+    border-radius: 6px;
+  }
+  .login-container label {
+    font-size: 0.95rem;
+  }
+  .login-container select,
+  .login-container input {
+    font-size: 0.95rem;
+  }
+  .login-container button {
+    font-size: 1rem;
+    padding: 0.65rem;
+  }
+}

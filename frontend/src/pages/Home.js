@@ -105,10 +105,10 @@ function Home() {
         <div className="about-content">
           <div className="about-images">
             <div className="img-wrapper">
-              <img src="/images/doc1.jpg" alt="Doctor" className="about-img small" />
-            </div>
+                      <img src="https://cdn.prod.website-files.com/664dc2c72953cea4ef68aa48/66503c2a844eccf703fcd355_about-01.jpg" />   
+              </div>
             <div className="img-wrapper relative">
-              <img src="/images/doc2.jpg" alt="Nurses and Patient" className="about-img large" />
+                      <img src="https://cdn.prod.website-files.com/664dc2c72953cea4ef68aa48/66503c2b3a4a24eff044f790_about-02.jpg" />
               <div className="experience-badge">
                 <span className="years">10+</span>
                 <span className="label">Years of Experience</span>
@@ -129,6 +129,76 @@ function Home() {
           </div>
         </div>
       </section>
+
+            {/* Footer Section */}
+      <footer className="footer">
+        <div className="footer-content">
+          {/* Left Column: Logo & Newsletter */}
+          <div className="footer-left">
+            <h2 className="footer-logo">
+              <span className="plus-icon">+</span> Nursing Care
+            </h2>
+            <p className="newsletter-text">Stay updated with our newsletter</p>
+            <div className="newsletter-form">
+              <input type="email" placeholder="Enter your email address" />
+              <button>Subscribe</button>
+            </div>
+            <div className="social-icons">
+              <i className="fab fa-facebook-f"></i>
+              <i className="fab fa-instagram"></i>
+              <i className="fab fa-x-twitter"></i>
+              <i className="fab fa-linkedin-in"></i>
+            </div>
+          </div>
+
+          {/* Middle Columns: Links */}
+          <div className="footer-links">
+            <div>
+              <h4>Pages</h4>
+              <ul>
+                <li>Home</li>
+                <li>Home 2</li>
+                <li>About</li>
+                <li>Service</li>
+                <li>Service Static</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Utility Pages</h4>
+              <ul>
+                <li>Style Guide</li>
+                <li>Instructions</li>
+                <li>Licenses</li>
+                <li>Changelog</li>
+                <li>Link in Bio</li>
+              </ul>
+            </div>
+            <div>
+              <h4>More</h4>
+              <ul>
+                <li>Coming soon</li>
+                <li>Error 404</li>
+                <li>Password Protected</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Right Column: Contact Info */}
+          <div className="footer-contact">
+            <h4>Contact information</h4>
+            <p><strong>Address</strong><br />Madurai Nerimedu Main road<br />Tamil Nadu 625002</p>
+            <p><strong>Phone</strong><br /><a href="tel:+11234567890"> (+91)8428399876</a></p>
+            <p><strong>E-mail</strong><br /><a href="mailto:hello@example.com">welcome@gmail.com</a></p>
+          </div>
+        </div>
+
+        <div className="footer-bottom">
+          <p>
+            Designed by <a href="#">Mani</a>, Powered by <a href="#">nothing</a>
+          </p>
+        </div>
+      </footer>
+
 
 
     </div>
