@@ -7,6 +7,7 @@ function Login() {
   const [role, setRole] = useState('');
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false); // 👁 Toggle state
   const navigate = useNavigate();
 
   const handleLogin = async (e) => {
@@ -65,12 +66,28 @@ function Login() {
 
         <label>
           Password:
-          <input
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
+          <div style={{ display: 'flex', alignItems: 'center' }}>
+            <input
+              type={showPassword ? 'text' : 'password'}
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+              style={{ flex: 1 }}
+            />
+            <button
+              type="button"
+              onClick={() => setShowPassword(!showPassword)}
+              style={{
+                background: 'none',
+                border: 'none',
+                marginLeft: '5px',
+                fontSize: '18px',
+                cursor: 'pointer',
+              }}
+            >
+              {showPassword ? '🙈' : '👁️'}
+            </button>
+          </div>
         </label>
 
         <button type="submit">Login</button>
