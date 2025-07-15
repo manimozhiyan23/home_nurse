@@ -16,6 +16,7 @@ import NurseHome from './pages/nurse/Home';
 import MyPatients from './pages/nurse/MyPatients';
 import MyScheduling from './pages/nurse/MyScheduling';
 import Revisiting from './pages/nurse/Revisiting';
+import PendingBookings from './pages/nurse/PendingBooking';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
         <Route path="/nurse/patients" element={<MyPatients />} />
         <Route path="/nurse/scheduling" element={<MyScheduling />} />
         <Route path="/nurse/revisiting" element={<Revisiting />} />
+        <Route path="/nurse/pending" element={<PendingBookings />} />
       </Routes>
     </Router>
   );

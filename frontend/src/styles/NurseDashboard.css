@@ -1,0 +1,26 @@
+.nurse-navbar {
+  background-color: white;
+  padding: 16px 0;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nurse-navbar a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: #4a2c73;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.nurse-navbar a:hover {
+  color: #7c4db5;
+  transform: scale(1.05);
+}
