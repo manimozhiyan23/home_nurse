@@ -1,56 +1,68 @@
-form {
-  max-width: 600px;
-  margin: 40px auto;
-  background: #fff;
+/* src/styles/Register.css */
+
+.register-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #979797, #2a5298);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.register-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
   padding: 40px;
   border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  max-width: 500px;
+  color: #000000;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
 }
 
-form input[type="text"],
-form input[type="password"],
-form input[type="email"],
-form input[type="date"],
-form input[type="number"],
-form input[type="file"] {
-  width: 100%;
-  padding: 12px;
+.register-card h2 {
+  text-align: center;
   margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  box-sizing: border-box;
-  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
 }
 
-form input[type="file"] {
-  padding: 10px 12px;
-  background-color: #f9f9f9;
-  border: 1px dashed #ccc;
-}
-
-form input::placeholder {
-  color: #999;
-}
-
-form button {
+.register-card select,
+.register-card input {
   width: 100%;
-  padding: 12px;
-  background-color: #0066cc;
-  color: white;
-  font-size: 16px;
+  margin-bottom: 15px;
+  padding: 12px 16px;
   border: none;
   border-radius: 6px;
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.register-card input::placeholder {
+  color: #ffffff;
+}
+
+.register-card select {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #000000;
+}
+
+.register-card button {
+  width: 100%;
+  padding: 12px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  transition: background 0.3s ease;
 }
 
-form button:hover {
-  background-color: #004d99;
-}
-
-form h2 {
-  text-align: center;
-  margin-bottom: 30px;
-  color: #333;
+.register-card button:hover {
+  background-color: #1d4ed8;
 }

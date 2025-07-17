@@ -1,26 +1,46 @@
-.nurse-navbar {
-  background-color: white;
-  padding: 16px 0;
-  display: flex;
-  justify-content: center;
-  gap: 32px;
+.nurse-dashboard {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  border-bottom: 1px solid #eee;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  position: sticky;
-  top: 0;
-  z-index: 10;
 }
 
-.nurse-navbar a {
+.nurse-dashboard h2 {
+  text-align: center;
+  color: #1e3a8a; /* Tailwind Indigo-900 */
+  margin-bottom: 20px;
+}
+
+.nurse-dashboard p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #374151; /* Tailwind Gray-700 */
+}
+
+.nurse-dashboard ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nurse-dashboard li {
+  margin: 12px 0;
+}
+
+.nurse-dashboard a {
   text-decoration: none;
-  font-size: 18px;
-  font-weight: 600;
-  color: #4a2c73;
-  transition: color 0.3s, transform 0.2s;
+  color: #2563eb; /* Tailwind Blue-600 */
+  font-weight: 500;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.2s ease, color 0.2s ease;
 }
 
-.nurse-navbar a:hover {
-  color: #7c4db5;
-  transform: scale(1.05);
+.nurse-dashboard a:hover {
+  background-color: #2563eb;
+  color: white;
 }
