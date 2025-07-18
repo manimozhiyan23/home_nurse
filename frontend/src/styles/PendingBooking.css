@@ -51,3 +51,12 @@
 .pending-table button:hover {
   background-color: #7a3db5;
 }
+
+@media screen and (max-width: 768px) {
+  .pending-table,
+  .scheduling-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}

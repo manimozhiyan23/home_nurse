@@ -37,3 +37,13 @@
 .scheduling-table tr:nth-child(odd) {
   background-color: #fff;
 }
+
+
+@media screen and (max-width: 768px) {
+  .pending-table,
+  .scheduling-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}

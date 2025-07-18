@@ -66,3 +66,11 @@
 .register-card button:hover {
   background-color: #1d4ed8;
 }
+
+@media screen and (max-width: 768px) {
+  .login-container form,
+  .register-card {
+    width: 90%;
+    padding: 20px;
+  }
+}

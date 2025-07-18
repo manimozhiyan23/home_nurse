@@ -60,3 +60,13 @@ h2 {
 .book-nurse-form button:hover {
   background-color: #217dbb;
 }
+
+@media screen and (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .book-nurse-form button {
+    width: 100%;
+  }
+}

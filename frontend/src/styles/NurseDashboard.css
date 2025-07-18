@@ -44,3 +44,14 @@
   background-color: #2563eb;
   color: white;
 }
+
+
+@media screen and (max-width: 768px) {
+  .nurse-dashboard {
+    padding: 20px;
+  }
+
+  .nurse-dashboard li {
+    font-size: 16px;
+  }
+}

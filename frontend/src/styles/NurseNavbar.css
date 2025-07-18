@@ -34,3 +34,15 @@
 .nurse-navbar a:hover {
   color: #7a3db5;
 }
+
+@media screen and (max-width: 768px) {
+  .nurse-navbar {
+    max-width: 100%;
+    padding: 16px;
+    font-size: 16px;
+  }
+
+  .nurse-navbar a {
+    font-size: 16px;
+  }
+}

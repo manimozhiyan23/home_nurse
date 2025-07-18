@@ -442,3 +442,33 @@
   color: #2563eb;
   text-decoration: underline;
 }
+
+
+@media screen and (max-width: 768px) {
+  .overlay-content h1 {
+    font-size: 2rem;
+  }
+
+  .overlay-content h3 {
+    font-size: 1rem;
+  }
+
+  .features-grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .about-content {
+    flex-direction: column;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
