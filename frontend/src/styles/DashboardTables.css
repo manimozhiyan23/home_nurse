@@ -1,0 +1,86 @@
+/* DashboardTables.css */
+
+.table-container {
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.table-title {
+  font-size: 24px;
+  margin-bottom: 16px;
+  color: #333;
+  text-align: center;
+}
+
+.dashboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.dashboard-table th,
+.dashboard-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.dashboard-table thead {
+  background-color: #007acc;
+  color: white;
+}
+
+.dashboard-table tbody tr:hover {
+  background-color: #f1f9ff;
+}
+
+.dashboard-table button {
+  padding: 6px 12px;
+  background-color: #28a745;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.dashboard-table button:hover {
+  background-color: #218838;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .dashboard-table,
+  .dashboard-table thead,
+  .dashboard-table tbody,
+  .dashboard-table th,
+  .dashboard-table td,
+  .dashboard-table tr {
+    display: block;
+  }
+
+  .dashboard-table tr {
+    margin-bottom: 16px;
+  }
+
+  .dashboard-table td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  .dashboard-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 16px;
+    top: 12px;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .dashboard-table thead {
+    display: none;
+  }
+}

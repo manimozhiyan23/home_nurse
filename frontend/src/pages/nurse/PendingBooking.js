@@ -1,12 +1,10 @@
-// src/pages/nurse/PendingBookings.js
-
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import '../../styles/PendingBooking.css';
+import '../../styles/DashboardTables.css';
 
 function PendingBookings() {
   const [bookings, setBookings] = useState([]);
-  const nurseId = 1; // Replace with actual nurse ID from context/login
+  const nurseId = 1;
 
   useEffect(() => {
     axios.get('http://localhost:8080/api/bookings/pending')
@@ -24,9 +22,9 @@ function PendingBookings() {
   };
 
   return (
-    <div className="pending-container">
-      <h2 className="pending-title">Pending Patient Requests</h2>
-      <table className="pending-table">
+    <div className="table-container">
+      <h2 className="table-title">Pending Patient Requests</h2>
+      <table className="dashboard-table">
         <thead>
           <tr>
             <th>Patient Name</th>
@@ -40,12 +38,12 @@ function PendingBookings() {
         <tbody>
           {bookings.map(b => (
             <tr key={b.id}>
-              <td>{b.patientName}</td>
-              <td>{b.patientContact}</td>
-              <td>{b.requiredService}</td>
-              <td>{b.preferredDate}</td>
-              <td>{b.preferredTime}</td>
-              <td>
+              <td data-label="Patient Name">{b.patientName}</td>
+              <td data-label="Contact">{b.patientContact}</td>
+              <td data-label="Service">{b.requiredService}</td>
+              <td data-label="Preferred Date">{b.preferredDate}</td>
+              <td data-label="Preferred Time">{b.preferredTime}</td>
+              <td data-label="Action">
                 <button onClick={() => acceptBooking(b.id)}>Accept</button>
               </td>
             </tr>
